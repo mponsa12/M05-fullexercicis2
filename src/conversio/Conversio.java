@@ -51,7 +51,7 @@ public class Conversio {
                         double tipus_canvi = 1.15d;
 
  
-                        System.out.println(valor_lliures + " lliures (£) actualment equivalen a " + (valor_lliures * tipus_canvi) + " euros (€).");
+                        System.out.println(valor_lliures + " lliures (£) actualment equivalen a " + (valor_lliures / tipus_canvi) + " euros (€).");
 
                         System.out.println("\nPrem INTRO per tornar al menú");
                         sc.nextLine();
