@@ -32,7 +32,7 @@ public class Conversio {
                 case 1:
                         System.out.println("\nCONVERSIÓ D'EUROS A LLIURES");
                         System.out.println("Introdueix en €:");
-                        int valor_euros = sc.nextInt();
+                        double valor_euros = sc.nextDouble();
                         double tipus_de_canvi = 1.15d;
                         
                         System.out.println(valor_euros + " euros (€) actualment equivalen a " + (valor_euros / tipus_de_canvi) + " lliures esterlines (£).");
@@ -47,11 +47,11 @@ public class Conversio {
                         System.out.println("\nCONVERSIÓ DE LLIURES A EUROS");
                         System.out.println("Introdueix en lliures:");
                         
-                        int valor_lliures = sc.nextInt();
+                        double valor_lliures = sc.nextDouble();
                         double tipus_canvi = 1.15d;
 
  
-                        System.out.println(valor_lliures + " lliures (£) actualment equivalen a " + (valor_lliures / tipus_canvi) + " euros (€).");
+                        System.out.println(valor_lliures + " lliures (£) actualment equivalen a " + (valor_lliures * tipus_canvi) + " euros (€).");
 
                         System.out.println("\nPrem INTRO per tornar al menú");
                         sc.nextLine();
